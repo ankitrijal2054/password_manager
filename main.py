@@ -7,7 +7,7 @@ def save_data():
     email = email_entry.get()
     password = password_entry.get()
     with open("data_file.txt", mode='a') as data:
-        data.write(f"{website}  |  {email}  |  {password}\n")
+        data.write(f"Website: {website}  |  Email/Username: {email}  |  Password: {password}\n")
 
 
 # ---------------------------- UI SETUP ------------------------------- #
