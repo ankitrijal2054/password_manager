@@ -9,6 +9,9 @@ def save_data():
     with open("data_file.txt", mode='a') as data:
         data.write(f"Website: {website}  |  Email/Username: {email}  |  Password: {password}\n")
 
+    website_entry.delete(0, END)
+    password_entry.delete(0, END)
+
 
 # ---------------------------- UI SETUP ------------------------------- #
 window = Tk()
